@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея рецептів</title>
+    <link rel="stylesheet" href="task1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+    <h1 class="logo">Задоволення від кожного шматочка</h1>
+    <p class="subtitle">Галерея улюблених кондитерських рецептів</p>
+</header>
+
+<main class="main">
+
+<input type="radio" name="category" id="filter-all" class="filter-input" checked>
+<input type="radio" name="category" id="filter-cakes" class="filter-input">
+<input type="radio" name="category" id="filter-cookies" class="filter-input">
+<input type="radio" name="category" id="filter-cupcakes" class="filter-input">
+<input type="radio" name="category" id="filter-tarts" class="filter-input">
+
+<section class="filters">
+    <div class="filters__block filters__block--category">
+        <h2 class="filters__title">Фільтр за видами виробів</h2>
+        <div class="category-buttons">
+            <label class="category-button" for="filter-all">Усі</label>
+            <label class="category-button" for="filter-cakes">Торти</label>
+            <label class="category-button" for="filter-cookies">Печиво</label>
+            <label class="category-button" for="filter-cupcakes">Капкейки</label>
+            <label class="category-button" for="filter-tarts">Тарти</label>
+        </div>
+    </div>
+
+    <div class="filters__block filters__block--calories">
+        <h2 class="filters__title">Фільтр за калорійністю</h2>
+        <label class="calories-label"><span>До 300 ккал</span><input type="checkbox" disabled></label>
+        <label class="calories-label"><span>300–500 ккал</span><input type="checkbox" disabled></label>
+        <label class="calories-label"><span>Понад 500 ккал</span><input type="checkbox" disabled></label>
+    </div>
+</section>
+
+<section class="gallery">
+
+<article class="card cake">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" class="card__image" alt="Шоколадний торт">
+    <div class="card__content">
+        <h3 class="card__title">Королівський шоколад</h3>
+        <p class="card__text">Насичені какао-коржі з прошарком темного ганашу та вишні.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: торт</p>
+        <p>Ккал: 450</p>
+        <p>Час: 1 год 30 хв</p>
+    </div>
+</article>
+
+<article class="card cake">
+    <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=800&q=80" class="card__image" alt="Карамельний торт">
+    <div class="card__content">
+        <h3 class="card__title">Солона карамель</h3>
+        <p class="card__text">Ванільний бісквіт, вершковий крем та домашня карамель.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: торт</p>
+        <p>Ккал: 390</p>
+        <p>Час: 1 год 10 хв</p>
+    </div>
+</article>
+
+
+<article class="card cookies">
+    <img src="C:\Users\Роман Трошкін\Desktop\lb 7-8\американо.jpg" class="card__image" alt="Печиво з шоколадом">
+    <div class="card__content">
+        <h3 class="card__title">Американське печиво</h3>
+        <p class="card__text">Класичне хрумке печиво зі шматочками молочного шоколаду.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: печиво</p>
+        <p>Ккал: 290</p>
+        <p>Час: 35 хв</p>
+    </div>
+</article>
+
+<article class="card cookies">
+    <img src="C:\Users\Роман Трошкін\Desktop\lb 7-8\вівся.jpg" class="card__image" alt="Вівсяне печиво">
+    <div class="card__content">
+        <h3 class="card__title">Вівсяне з родзинками</h3>
+        <p class="card__text">Корисне та поживне печиво з додаванням кориці.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: печиво</p>
+        <p>Ккал: 260</p>
+        <p>Час: 30 хв</p>
+    </div>
+</article>
+
+
+<article class="card cupcakes">
+    <img src="C:\Users\Роман Трошкін\Desktop\lb 7-8\черв.jpg" class="card__image" alt="Капкейки">
+    <div class="card__content">
+        <h3 class="card__title">Капкейк «Червоний оксамит»</h3>
+        <p class="card__text">Яскравий бісквіт із ніжною шапочкою з крем-чізу.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: капкейки</p>
+        <p>Ккал: 320</p>
+        <p>Час: 45 хв</p>
+    </div>
+</article>
+
+<article class="card cupcakes">
+    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=80" class="card__image" alt="Кекси">
+    <div class="card__content">
+        <h3 class="card__title">Шоколадні мафіни</h3>
+        <p class="card__text">Вологі всередині, з подвійною порцією какао.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: капкейки</p>
+        <p>Ккал: 350</p>
+        <p>Час: 50 хв</p>
+    </div>
+</article>
+
+
+<article class="card tarts">
+    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" class="card__image" alt="Фруктовий тарт">
+    <div class="card__content">
+        <h3 class="card__title">Літній ягідний тарт</h3>
+        <p class="card__text">Пісочна корзинка, заварний крем та свіжі ягоди.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: тарт</p>
+        <p>Ккал: 410</p>
+        <p>Час: 1 год</p>
+    </div>
+</article>
+
+<article class="card tarts">
+    <img src="C:\Users\Роман Трошкін\Desktop\lb 7-8\лим.jpg" class="card__image" alt="Лимонний тарт">
+    <div class="card__content">
+        <h3 class="card__title">Лимонний тарт з меренгою</h3>
+        <p class="card__text">Ідеальний баланс кислого лимона та солодкої меренги.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: тарт</p>
+        <p>Ккал: 390</p>
+        <p>Час: 55 хв</p>
+    </div>
+</article>
+
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p class="footer-logo">Смачні рецепти · 2025</p>
+        <p class="footer-text">Колекція домашніх рецептів.</p>
+        <nav class="footer-nav">
+            <a href="#">Про автора</a>
+            <a href="#">Рецепти</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
